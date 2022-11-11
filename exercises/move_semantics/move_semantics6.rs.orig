@@ -6,9 +6,7 @@
 fn main() {
     let data = "Rust is great!".to_string();
 
-    let c = get_char(&data);
-
-    println!("{}", c);
+    get_char(&data);
 
     string_uppercase(data);
 }

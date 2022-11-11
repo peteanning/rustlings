@@ -1,13 +1,7 @@
-main() { // made it unsafe because rust-analyzer is complaining about println
+fn main() {
+    let mut s = String::from("hello");
 
-    if true {
-        let foo = "my string";
-    }
+    s.push_str(", world!"); // push_str() appends a literal to a String
 
-    println!("{}", foo);
-}
-
-fn sub() {
-  let bar = foo;
-
+    println!("{}", s); // This will print `hello, world!`
 }
